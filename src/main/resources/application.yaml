@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: employee-api
+
+  datasource:
+    url: jdbc:sqlserver://localhost:1434;databaseName=employeedb;encrypt=false
+    username: sa
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: verYs3cret
+
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
